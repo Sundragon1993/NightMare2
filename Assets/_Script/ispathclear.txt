@@ -1,0 +1,42 @@
+# Stay alive for two minutes.
+# If you win, it gets harder (and more rewarding).
+# If you lose, you must wait a day before you can resubmit.
+# Remember, each submission gets a new random seed.
+
+loop:
+    enemy = self.findNearest(self.findEnemies())
+    if enemy:
+        self.attack(enemy)
+        
+def tryMoveTo(x, y):
+    start = {"x": self.pos.x, "y": self.pos.y}
+    end = {"x": x, "y": y}
+    if self.isPathClear(start, end):
+        self.moveXY(end.x, end.y)
+        return True
+    return False
+    
+def doAttack(enemy):
+    if self.isReady("cleave"):
+        self.cleave(enemy)
+    else:
+        while enemy.health > 0:
+            self.attack(enemy)
+    
+loop:
+    enemy = self.findNearest(self.findEnemies())
+    if enemy:
+        if self.distanceTo(enemy) > 10:
+            moved = False
+            if not moved and self.pos.y > enemy.pos.y:
+                moved = tryMoveTo(self.pos.x, self.pos.y+50)
+            if not moved and self.pos.y < enemy.pos.y:
+                moved = tryMoveTo(self.pos.x, self.pos.y-50)
+            if not moved and self.pos.x > enemy.pos.x:
+                moved = tryMoveTo(self.pos.x+50, self.pos.y)
+            if not moved and self.pos.x < enemy.pos.x:
+                moved = tryMoveTo(self.pos.x-50, self.pos.y)
+            if not moved:
+                doAttack(enemy)
+        else:
+            doAttack(enemy)

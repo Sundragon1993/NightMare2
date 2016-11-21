@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.NightMare2.CSharp", "UnityVS.NightMare2.CSharp.csproj", "{15D5F56B-E051-968B-A7EE-4D6D9E9707E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.NightMare2.CSharp.Editor", "UnityVS.NightMare2.CSharp.Editor.csproj", "{313234BC-CB9D-EFB7-958F-850DA7B6193A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15D5F56B-E051-968B-A7EE-4D6D9E9707E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15D5F56B-E051-968B-A7EE-4D6D9E9707E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15D5F56B-E051-968B-A7EE-4D6D9E9707E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15D5F56B-E051-968B-A7EE-4D6D9E9707E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{313234BC-CB9D-EFB7-958F-850DA7B6193A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{313234BC-CB9D-EFB7-958F-850DA7B6193A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{313234BC-CB9D-EFB7-958F-850DA7B6193A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{313234BC-CB9D-EFB7-958F-850DA7B6193A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
