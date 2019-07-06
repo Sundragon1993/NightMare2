@@ -7,7 +7,7 @@ namespace Assets.Scripts.Enemy
         Transform player;
         //PlayerHealth playerHealth;
         //EnemyHealth enemyHealth;
-        NavMeshAgent nav;
+        UnityEngine.AI.NavMeshAgent nav;
 
 
         void Awake ()
@@ -15,7 +15,7 @@ namespace Assets.Scripts.Enemy
             player = GameObject.FindGameObjectWithTag ("Player").transform;
             //playerHealth = player.GetComponent <PlayerHealth> ();
             //enemyHealth = GetComponent <EnemyHealth> ();
-            nav = GetComponent <NavMeshAgent> ();
+            nav = GetComponent <UnityEngine.AI.NavMeshAgent> ();
         }
 
 

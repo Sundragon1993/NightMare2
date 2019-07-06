@@ -2,7 +2,7 @@
 
 namespace Assets._Script
 {
-    [RequireComponent(typeof(NavMeshAgent))]
+    [RequireComponent(typeof(UnityEngine.AI.NavMeshAgent))]
     [RequireComponent(typeof(Animator))]
     public class EnemyState : MonoBehaviour
     {
@@ -12,7 +12,7 @@ namespace Assets._Script
         private bool isSinking;
 
         public Transform player;
-        public NavMeshAgent nav;
+        public UnityEngine.AI.NavMeshAgent nav;
         public Animator ani;
 
         public bool isDead = false;
@@ -34,7 +34,7 @@ namespace Assets._Script
         private void GameObjectLoad()
         {
             player = GameObject.Find("Player").transform;
-            nav = GetComponent<NavMeshAgent>();
+            nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
             ani = GetComponent<Animator>();
 
         }
@@ -117,6 +117,7 @@ namespace Assets._Script
             ani.enabled = false;
             GetComponent<Rigidbody>().isKinematic = true;
             isSinking = true;
+            ScoreManager.score += gameScore;
             Destroy(transform.gameObject, 2f);
         }
     }

@@ -5,9 +5,6 @@ namespace Assets._Script
 {
     public class GameController : MonoBehaviour
     {
-
-        
-
         public GameObject[] spawnPoint;
         public GameObject[] numZombies;
         public float spawnDelays = 3f;
@@ -28,7 +25,6 @@ namespace Assets._Script
         {
             GameOverCheck();
             GameScoreCheck();
-
         }
 
         private void GameScoreCheck()
